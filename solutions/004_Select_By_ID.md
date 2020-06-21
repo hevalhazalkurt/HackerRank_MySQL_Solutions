@@ -4,7 +4,7 @@
 
 ## Problem
 
-Query the names of all American cities in `CITY` with populations larger than `120000`. The `COUNTRYCODE` for Ameria is `USA`.
+Query all columns for a city in `CITY` with the `ID` `1661`
 
 
 ## Input Format
@@ -18,7 +18,7 @@ The `CITY` table is described as follows :
 ## Solution
 
 ```SQL
-SELECT NAME FROM CITY WHERE COUNTRYCODE = "USA" AND POPULATION > 120000
+SELECT * FROM CITY WHERE ID = 1661;
 ```
 
 <br>
@@ -26,8 +26,5 @@ SELECT NAME FROM CITY WHERE COUNTRYCODE = "USA" AND POPULATION > 120000
 **Output**
 
 ```
-Scottsdale
-Corona
-Concord
-Cedar Rapids
+1661 Sayama JPN Saitama 162472
 ```
